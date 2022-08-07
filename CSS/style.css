@@ -3,6 +3,15 @@
     color:white;
     font-weight: bold;
 }
+#name{
+    color: black;
+}
+#email{
+    color: black;
+}
+textarea{
+    color: black;
+}
 .Top_of_Page{
     text-align: center;
 }
