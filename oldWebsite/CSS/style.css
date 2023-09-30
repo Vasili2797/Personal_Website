@@ -1,0 +1,158 @@
+/*  Check out these for the future endeavor
+    display: flex;
+    justify-content: conter;
+    align-items: center;
+    text-align: center;
+    background-position
+    background-attachment:fixed; makes the parralex effect(text is moving, but images stay the same)*/
+*{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-weight: bold;
+}
+html, body{
+    width: 98%;
+}
+body{
+    background-color:whitesmoke;
+    background-position: top; /*You can also do percentages in x and y direction*/
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    height: auto;
+    background-image: url("../CSS/image/DSC_0360.JPG");/*The image resource must be in the proper file, and the proper relative path must be given*/
+    background-repeat: round;
+    opacity: 1;
+    text-align: justify;
+}
+#first_paragraph{
+    text-indent: 20px;
+}
+h1{
+    font-size: 40px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.Top_of_Page{
+    text-align: center;
+}
+a{
+    background-color:rgb(214, 207, 198);
+    text-decoration: none;
+    border-bottom: solid;
+    border-color:rgb(54, 184, 227);
+    font-weight: bold;
+    color:indigo;
+    cursor:pointer;
+}
+a.active{
+    background: white;
+    color:red;
+}
+a:hover{
+    background: yellowgreen;
+    display: inline;
+}
+div.About{
+    color:black;
+}
+ul li{
+    font-family:'Times New Roman', Times, serif;
+    list-style-type: none;
+    display:inline;
+    margin-inline: 5px;
+}
+#name {
+    color: black;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+#email{
+    text-align: left;
+    clear: both;
+    color: black;
+    margin-right: 30px;
+    margin-top:10px
+}
+.Contact label{
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.Contact textarea{
+    text-transform: capitalize;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+#submit{
+    font-weight: bold;
+    border: none;/*I could not get only border-bottom without this*/
+    border-bottom: solid;
+    border-color: rgb(54, 184, 227);
+    color: indigo;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: yellowgreen;
+    display: inline;
+}
+#submit.active{
+    background: white;
+    color: red;
+}
+.My_Projects_Page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    /* position: relative;  */
+    /* bottom:20px; */
+    text-transform: capitalize;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.My_Projects_Page img{
+    display: block;}
+       
+
+/* .My_Projects_Page img:hover{
+    content: "";
+    border: 2px solid gray;
+    
+    position: absolute;
+    box-sizing: border-box;
+    top:-1px;
+    left: -1px;
+    z-index: -2;
+} */
+.container-item{
+    
+}
+
+figure:hover{
+    background-color: aqua;
+}
+figure{
+    float:left;
+}
+figure figcaption{
+    text-align: center;
+}
+#Top{
+    text-transform: capitalize;
+}
+#footer{
+    position: relative;
+    height: 100px;
+    margin-top:auto;
+    clear: both;
+}
+#copyright{
+    text-indent: 0px;
+}
