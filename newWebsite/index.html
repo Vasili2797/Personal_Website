@@ -54,69 +54,113 @@
     </nav>
   </header>
   <div class="About" id="About">
-    <h2 id=>About Me</h2>
+    <h2>About Me</h2>
     <p id="first_paragraph">Hello, and thank you for visiting my webpage. My name is Vasili Nashvilli, a developer based
-      in New Jersey. I have a bachelor's degree in <a
+      in New Jersey. I have a bachelor's of science degree in <a
         href="https://www.montclair.edu/catalog/view_requirements.php?CurriculumID=2965" target="_blank"
         rel="noopener noreferrer">mathematics of finance</a> from <a href="https://www.montclair.edu/" target="_blank"
-        rel="noopener noreferrer" title="https://www.montc...">Montclair State University</a>. I am a self-taught web
-      developer with knowledge in The following tach stack:</p>
+        rel="noopener noreferrer" title="https://www.montc...">Montclair State University</a>, where I took courses in
+      classes such as probablty, statistics and economics uniting the differences between the sciences of mathematics
+      and
+      finance. I am interested in different types of technologies, and how it could improve the lives of many people in
+      different fields of work. I am a self-taught developer with knowledge in the following tech stack:</p>
 
 
 
 
-    <div class="rows">
-      <div class="columns">
-        <img src="Css/image/512px-HTML5_Badge.svg.png" alt="HTML5 icon" style="height: 10vh; display: block;">
+
+    <div class="tech-stack-container">
+      <div class="rows">
+        <div class="columns">
+          <img src="Css/image/512px-HTML5_Badge.svg.png" alt="HTML5 icon" style="height: 10vh; display: block;">
+          <center>
+            HTML
+          </center>
+        </div>
+        <div class="columns">
+          <img src="Css/image/121-css3-512.webp" alt="CSS icon" style="height: 10vh; display: flex;">
+          <center>
+            CSS
+          </center>
+        </div>
+        <div class="columns">
+          <img src="Css/image/javascript-logo-transparent-logo-javascript-images-3.png" alt="JavaScript icon"
+            style="height: 10vh; display: flex;">
+          <center>
+            JavaScript
+          </center>
+        </div>
         <center>
-          HTML
+          <div class="columns">
+            <img src="Css/image/Java_icon.jpg" alt="Java icon" style="height: 10vh; display: flex;">
+            <center>
+              Java
+            </center>
+          </div>
         </center>
       </div>
-      <div class="columns">
-        <img src="Css/image/121-css3-512.webp" alt="CSS icon" style="height: 10vh; display: flex;">
-        <center>
-          CSS
-        </center>
+      <br>
+      <div class="rows">
+        <div class="columns">
+          <img
+            src="Css/image/kisspng-microsoft-azure-sql-database-microsoft-azure-sql-d-postani-spletni-razvijalec-izberite-svojo-uno-5cfe7bd5b6e377.6992930615601817177491.jpg"
+            alt="SQL icon" style="height: 10vh; display: flex;">
+          <center>
+            SQL
+          </center>
+        </div>
+        <div class="columns">
+          <img src="Css/image/MySQL-Logo.png" alt="MySQL icon" style="height: 10vh;">
+          <center>
+            MySQL
+          </center>
+        </div>
+        <div class="columns">
+          <img src="Css/image/Python-logo-notext.svg.png" alt="Python icon" style="height: 10vh; display: flex;">
+          <center>
+            Python
+          </center>
+        </div>
+        <div class="columns">
+          <img src="Css/image/github.png" alt="Git icon" style="height: 10vh; display: flex;">
+          <center>
+            Git
+          </center>
+        </div>
       </div>
     </div>
-
-
-
-  </div>
-  <br>
-  <hr>
-  <h2>Contact</h2>
-  <div class="Contact" id="Contact">
-    <p>For all the services, please include your name, email address, and reason for contact and I will get back to as
-      soon as possible!
-      <br>
-    <form action="https://formsubmit.co/bjornbjornssonn@gmail.com" method="POST" id="contact-form">
-      <!-- <input type="hidden" name="_captcha" value="false"> -->
-      <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
-      <label for="name" required>name</label>
-      <input type="name" id="name" placeholder="name" required>
-      <div>
-        <label for="email">email address</label>
-        <!-- <input type="email" id="email" pattern=".+@globex\.com" placeholder="email@..." required> -->
-        <input name="email" value="" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-          placeholder="email@..." title="Not Valid" required>
-      </div>
-      <br>
-      <br>
-      <label for="Services">services required</label>
-      <textarea name="Service" id="Service" cols="30" rows="10" placeholder="Services " required></textarea>
-      <br>
-      <button type="submit" id="submit">Submit</button>
-
-    </form>
-    </p>
-  </div>
-  <hr>
-  <footer id="footer">
-    <a href="#" id="Top">back to top</a>
-    <p id="copyright">copyright&copy;2023</p>
-  </footer>
-  <!-- <script>
+    <hr>
+    <div class="Contact" id="Contact">
+      <h2>Contact</h2>
+      <p>For all the services, please include your name, email address, and reason for contact and I will get back as
+        soon as possible!
+        <br>
+      <form action="https://formsubmit.co/bjornbjornssonn@gmail.com" method="POST" id="contact-form">
+        <!-- <input type="hidden" name="_captcha" value="false"> -->
+        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+        <label for="name" required>name</label>
+        <input type="name" id="name" placeholder="name" required>
+        <div>
+          <label for="email">email address</label>
+          <!-- <input type="email" id="email" pattern=".+@globex\.com" placeholder="email@..." required> -->
+          <input name="email" value="" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+            placeholder="email@..." title="Not Valid" required>
+        </div>
+        <br>
+        <label for="Services">services required</label>
+        <br>
+        <textarea name="Service" id="Service" cols="30" rows="10" placeholder="Services " required></textarea>
+        <br>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+      </p>
+    </div>
+    <hr>
+    <footer id="footer">
+      <a href="#" id="Top">back to top</a>
+      <p id="copyright">copyright&copy;2023</p>
+    </footer>
+    <!-- <script>
     let navbar = document.getElementById("navigation");
     window.onscroll = function () {
       if (window.pageYOffset >= navbar.offsetTop) {
