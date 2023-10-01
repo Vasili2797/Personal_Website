@@ -30,6 +30,9 @@ body {
   opacity: 1;
   text-align: justify;
 }
+p{
+  line-height: 1.5;
+}
 
 .navigation {
   padding: 10px;
