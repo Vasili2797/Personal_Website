@@ -1,23 +1,43 @@
+* {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: black; */
+    font-weight: bold;
+    /* margin: auto; */
+}
 
 h1 {
     font-size: 40px;
     padding-bottom: 5px;
     text-align: center;
+    color: black;
 }
 
-a,
-#submit {
+.My_Projects_Page>.My_Projects>.container> {
+    position: relative;
+    margin: auto;
+    place-items: center;
+}
+
+.container-item {
+    position: relative;
+    margin: auto;
+    /* display: flex; */
+    place-items: center;
+}
+
+a {
     background-color: rgb(214, 207, 198);
     text-decoration: none;
     border-bottom: solid;
     border-color: rgb(54, 184, 227);
-    font-weight: bold;
+    font-size: large;
+    font-weight: bolder;
     color: indigo;
     cursor: pointer;
 }
 
-a.active,
-#submit.active {
+a.active {
     background: white;
     color: red;
 }
@@ -29,11 +49,13 @@ a:hover,
 }
 
 .My_Projects_Page {
+    --bg-image: url("image/M74.webp");
+    --bg-mage-opacity: 0.5;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     /* text-align: center; */
     /* position: relative; */
     /* bottom:20px; */
@@ -41,12 +63,14 @@ a:hover,
     margin-left: 100px;
     margin-right: 100px;
     /* position: relative; */
-    background-image: url("image/M74.webp");
+    background-image: var(--bg-image);
+    position: relative;
+    isolation: isolate;
 
-    &::before {
+    /* &::before {
         content: '';
         /* position: absolute; */
-        background-size: cover;
+    /* background-size: cover;
         background-repeat: no-repeat;
         font-family: "Open Sans", "Helvetica Neue", sans-serif;
         font-weight: bold;
@@ -57,21 +81,29 @@ a:hover,
         right: 0px;
         bottom: 0px;
         left: 0px;
-    }
+        z-index:-1;
+        inset: 0;
+        opacity: var(--bg-mage-opacity); */
+    /* } */
+}
+
+.My_Projects_Page::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: white;
+    opacity: 0.65;
 }
 
 .My_Projects_Page img {
     display: block;
+    /* position: center; */
+    place-items: center;
 }
 
-/* .My_Projects_Page img:hover {
-  z-index: 20;
-} */
-
-/* .container-item {} */
-
 figure:hover {
-    background-color: aqua;
+    background-color: none;
 }
 
 figure {
@@ -80,10 +112,18 @@ figure {
 
 figure figcaption {
     text-align: center;
+    font-size: 20px;
+    color: black;
 }
 
 #Top {
     text-transform: capitalize;
+}
+
+#My_Projects {
+    margin: auto;
+    position: relative;
+    top: 50%;
 }
 
 #footer {
@@ -95,4 +135,18 @@ figure figcaption {
 
 #copyright {
     text-indent: 0px;
+}
+
+@media (max-width: 1356px) {
+
+    html,
+    body {
+        width: 100%;
+    }
+
+    #My_Projects {
+        /* place-items: center; */
+        /* max-width: fit-content; */
+        margin-left: 20%;
+    }
 }
