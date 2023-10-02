@@ -22,7 +22,7 @@
   <header class="Top_of_Page">
     <h1>Personal Website of Vasili Nashvilli</h1>
     <img src="https://t3.ftcdn.net/jpg/02/33/17/50/240_F_233175040_hwqRyiZlQkXimeLz2AIZhajyfiU9El1m.jpg"
-      alt="Work In Progress">
+      alt="Work In Progress" style="height: 300px; width: 300px;">
     <p>
       Welcome to my personal website. This is the place where you can see different projects I developed. Thank you for
       visiting!
@@ -65,68 +65,88 @@
       finance. I am interested in different types of technologies, and how it could improve the lives of many people in
       different fields of work. I am a self-taught developer with knowledge in the following tech stack:</p>
 
-
-
-
-
+    <p>
+      The table
+    </p>
+    <br>
     <div class="tech-stack-container">
-      <div class="rows">
-        <div class="columns">
-          <img src="Css/image/512px-HTML5_Badge.svg.png" alt="HTML5 icon" style="height: 10vh; display: block;" title="HTML">
-          <center>
-            HTML
-          </center>
-        </div>
-        <div class="columns">
-          <img src="Css/image/121-css3-512.webp" alt="CSS icon" style="height: 10vh; display: flex;" title="CSS">
-          <center>
-            CSS
-          </center>
-        </div>
-        <div class="columns">
-          <img src="Css/image/javascript-logo-transparent-logo-javascript-images-3.png" alt="JavaScript icon"
-            style="height: 10vh; display: flex;" title="JavaScript">
-          <center>
-            JavaScript
-          </center>
-        </div>
-        <center>
-          <div class="columns">
-            <img src="Css/image/Java_icon.jpg" alt="Java icon" style="height: 10vh; display: flex;" title="Java">
+      <div class="grid-container">
+        <figure>
+          <div class="grid-item">
+            <img src="Css/image/512px-HTML5_Badge.svg.png" alt="HTML5 icon" style="height: 5vh; display: block;"
+              title="HTML">
             <center>
-              Java
+              <figcaption>HTML</figcaption>
             </center>
           </div>
-        </center>
-      </div>
-      <br>
-      <div class="rows">
-        <div class="columns">
-          <img
-            src="Css/image/kisspng-microsoft-azure-sql-database-microsoft-azure-sql-d-postani-spletni-razvijalec-izberite-svojo-uno-5cfe7bd5b6e377.6992930615601817177491.jpg"
-            alt="SQL icon" style="height: 10vh; display: flex;" title="SQL">
-          <center>
-            SQL
-          </center>
-        </div>
-        <div class="columns">
-          <img src="Css/image/MySQL-Logo.png" alt="MySQL icon" style="height: 10vh;" title="MySQL">
-          <center>
-            MySQL
-          </center>
-        </div>
-        <div class="columns">
-          <img src="Css/image/Python-logo-notext.svg.png" alt="Python icon" style="height: 10vh; display: flex;" title="Python">
-          <center>
-            Python
-          </center>
-        </div>
-        <div class="columns">
-          <img src="Css/image/github.png" alt="Git icon" style="height: 10vh; display: flex;" title="Git">
-          <center>
-            Git
-          </center>
-        </div>
+        </figure>
+
+        <figure>
+          <div class="grid-item">
+            <img src="Css/image/121-css3-512.webp" alt="CSS icon" style="height: 5vh; display: flex;" title="CSS">
+            <center>
+              <figcaption>CSS</figcaption>
+            </center>
+          </div>
+        </figure>
+
+        <figure>
+          <div class="grid-item">
+            <img src="Css/image/javascript-logo-transparent-logo-javascript-images-3.png" alt="JavaScript icon"
+              style="height: 5vh; display: flex;" title="JavaScript">
+            <center>
+              <figcaption>JavaScript</figcaption>
+            </center>
+          </div>
+        </figure>
+
+        <figure>
+          <div class="grid-item">
+            <img src="Css/image/Java_icon.jpg" alt="Java icon" style="height: 5vh; display: flex;" title="Java">
+            <center>
+              <figcaption>Java</figcaption>
+            </center>
+          </div>
+        </figure>
+
+        <figure>
+          <div class="grid-item">
+            <img
+              src="Css/image/kisspng-microsoft-azure-sql-database-microsoft-azure-sql-d-postani-spletni-razvijalec-izberite-svojo-uno-5cfe7bd5b6e377.6992930615601817177491.jpg"
+              alt="SQL icon" style="height: 5vh; display: flex;" title="SQL">
+            <center>
+              <figcaption>SQL</figcaption>
+            </center>
+          </div>
+        </figure>
+
+        <figure>
+          <div class="grid-item">
+            <img src="Css/image/MySQL-Logo.png" alt="MySQL icon" style="height: 5vh;" title="MySQL">
+            <center>
+              <figcaption>MySQL</figcaption>
+            </center>
+          </div>
+        </figure>
+
+        <figure>
+          <div class="grid-item">
+            <img src="Css/image/Python-logo-notext.svg.png" alt="Python icon" style="height: 5vh; display: flex;"
+              title="Python">
+            <center>
+              <figcaption>Python</figcaption>
+            </center>
+          </div>
+        </figure>
+
+        <figure>
+          <div class="grid-item">
+            <img src="Css/image/github.png" alt="Git icon" style="height: 5vh; display: flex;" title="Git">
+            <center>
+              <figcaption>Git</figcaption>
+            </center>
+          </div>
+        </figure>
       </div>
     </div>
     <hr>
@@ -141,7 +161,7 @@
         <label for="name" required>name</label>
         <input type="name" id="name" placeholder="name" required>
         <div>
-          <label for="email">email address</label>
+          <label for="email" id="email">email address</label>
           <!-- <input type="email" id="email" pattern=".+@globex\.com" placeholder="email@..." required> -->
           <input name="email" value="" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
             placeholder="email@..." title="Not Valid" required>
@@ -155,6 +175,7 @@
       </form>
       </p>
     </div>
+    <br>
     <hr>
     <footer id="footer">
       <a href="#" id="Top">back to top</a>
