@@ -206,32 +206,3 @@ figure figcaption {
     margin-top: 0.25em;
     text-align: center;
 }
-
-.container {
-    /* display: grid; */
-    /* grid-auto-rows: minmax(150px, auto); */
-    grid-gap: 0rem;
-    grid-gap: 20px;
-    /* justify-content: stretch; */
-    /* align-content: stretch; */
-    /* height: 100vh; */
-    justify-items: center;
-    align-items: center;
-}
-
-.container-item {
-    /* display: grid; */
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 0rem;
-    grid-gap: 20px;
-    justify-content: space-around;
-    /* align-content: stretch; */
-    /* height: 100vh; */
-    justify-items: center;
-    align-items: center;
-}
-
-/* The class that I am working with now is as follows::
-    parent class=container
-    children items= container-item
-    specificity towards children= container-item-1,or -2 etc.)
