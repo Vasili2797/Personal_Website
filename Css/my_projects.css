@@ -2,12 +2,12 @@
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     /* color: black; */
-    font-weight: bold;
     /* margin: auto; */
 }
 
 h1 {
     text-transform: capitalize;
+    font-weight: bold;
 }
 
 html {
@@ -15,16 +15,29 @@ html {
     background-image: var(--bg-image);
     position: relative;
     isolation: isolate;
+    /* min-height: 100vh; */
 }
 
-.My_Projects_Page::after {
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
     content: '';
     position: absolute;
     inset: 0;
     z-index: -1;
     background-color: white;
     opacity: 0.65;
+    width: 100v;
+    background-size: cover;
 }
+
+a {
+    padding: 1vh;
+}
+
 
 .My_Projects_Page img {
     display: block;
@@ -62,6 +75,7 @@ my figure is his .card__content
     display: grid;
     gap: .125rem;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    margin: 0 auto;
 }
 
 .stacked {
@@ -144,12 +158,9 @@ a:hover,
 
 #footer {
     background-color: whitesmoke;
-    position: relative;
-    height: 100px;
-    width: 100%;
-    position: relative;
-    margin-top: 5px;
-    clear: both;
+    /* padding: 35px; */
+    position: sticky;
+    top: 100%;
 }
 
 #Top {
