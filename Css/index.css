@@ -189,7 +189,7 @@ textarea {
   color: black;
 }
 
-#submit{
+#submit {
   margin-top: -10px;
   margin-right: 0px;
   /* float: right; */
@@ -205,11 +205,19 @@ figure figcaption {
   text-transform: capitalize;
 }
 
+body {
+  min-height: 100vh;
+  /* overflow-x: hidden; */
+}
+
 #footer {
-  position: relative;
+  /* position: relative; */
   height: 100px;
   margin-top: 5px;
   clear: both;
+  position: sticky;
+  top: 100%;
+  /* position: absolute; */
 }
 
 #copyright {
