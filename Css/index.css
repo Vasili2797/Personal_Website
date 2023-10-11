@@ -107,22 +107,12 @@ ul li {
   }
 }
 
-
-
-
-
-
-
-
-
-
 #name {
   color: black;
   display: inline-block;
   /* margin-right: 30px; */
   /* margin-top: 10px; */
 }
-
 
 #email {
   display: inline-block;
@@ -181,8 +171,6 @@ textarea {
   border-radius: 10px;
   border-color: black;
   margin-bottom: 25px;
-
-
 }
 
 #Service {
@@ -224,14 +212,6 @@ body {
   text-transform: capitalize;
   text-indent: 0px;
 }
-
-
-
-
-
-
-
-
 
 img {
   width: 100%;
