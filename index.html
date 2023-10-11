@@ -56,7 +56,7 @@
   </header>
   <div class="About" id="About">
     <h2 style="margin-top: 2vh;">About Me</h2>
-    
+
     <p id="first_paragraph">Hello, and thank you for visiting my webpage. My name is Vasili Nashvilli, a developer based
       in New Jersey. I have a bachelor's of science degree in <a
         href="https://www.montclair.edu/catalog/view_requirements.php?CurriculumID=2965" target="_blank"
@@ -150,28 +150,29 @@
     <hr>
     <div class="Contact" id="Contact">
       <h2>Contact</h2>
-      <p>For all the services, please include your name, email address, and reason for contact and I will get back as
-        soon as possible!
-        <br>
-      <form action="https://formsubmit.co/bjornbjornssonn@gmail.com" method="POST" id="contact-form">
-        <!-- <input type="hidden" name="_captcha" value="false"> -->
-        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
-        <label for="name" id="name">name</label>
-        <input name="name" value="" type="name" id="name" placeholder="name" required>
-        <div>
-          <label for="email" id="email">email address</label>
-          <!-- <input type="email" id="email" pattern=".+@globex\.com" placeholder="email@..." required> -->
-          <input name="email" value="" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-            placeholder="email@..." title="Not Valid" required>
-        </div>
-        <br>
-        <label for="Services">services required</label>
-        <br>
-        <textarea name="Service" id="Service" cols="30" rows="10" placeholder="Services " required></textarea>
-        <br>
-        <button type="submit" id="submit">Submit</button>
-      </form>
-      </p>
+      <p>Thank you for visiting my webpage. If you liked my webpage, I am available for work as an aspiring developer.
+        For all the services, please include your name, email address, and reason for contact and I will get back as
+        soon as possible!</p>
+      <br>
+      <div class="form-submit">
+        <form action="https://formsubmit.co/bjornbjornssonn@gmail.com" method="POST" id="contact-form">
+          <!-- <input type="hidden" name="_captcha" value="false"> -->
+          <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+          <div class="form-row">
+            <label for="name" class="form-control" id="name">full name</label>
+            <input name="name" value="" type="name" id="name" placeholder="name" required>
+            <label for="email" id="email">email address</label>
+            <!-- <input type="email" id="email" pattern=".+@globex\.com" placeholder="email@..." required> -->
+            <input name="email" class="form-control" value="" type="email" id="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="email@..." title="Not Valid" required>
+          </div>
+          <label for="Services">services required</label>
+          <br>
+          <textarea name="Service" id="Service" cols="30" rows="10" placeholder="Services " required></textarea>
+          <br>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
     </div>
     <br>
     <hr>
