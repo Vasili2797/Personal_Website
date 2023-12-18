@@ -12,10 +12,11 @@ const standardPanel = (contentVariable) => {
 };
 
 const MyProjects = () => {
-  return (
+  const componentContent = (
     <>
       <h1>Hello from My Projects Page</h1>
     </>
   );
+  return standardPanel(componentContent);
 };
 export default MyProjects;
