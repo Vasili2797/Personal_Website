@@ -2,8 +2,8 @@
   margin-top: 50px;
   padding-top: 50px;
   margin-left: 0px;
-  /* text-align: center; */
-  /* overflow: hidden; */
+  text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -41,9 +41,27 @@
   }
 }
 
-html,
-body {
-  /* width: 99%; */
-  padding-top: 5px;
-  overflow-x: hidden;
+img {
+  height: 5vh;
+  display: block;
+}
+.grid-item {
+  /* position: relative; */
+  /* place-items: center; */
+  /* margin: auto; */
+  /* max-width: 300px; */
+  padding: 15px;
+}
+
+figure {
+  position: center;
+}
+figcaption {
+  position: relative;
+}
+
+#name,
+#email,
+#Services {
+  text-transform: capitalize;
 }

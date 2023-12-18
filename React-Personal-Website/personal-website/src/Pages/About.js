@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
+import ResponsiveAutoExample from "./TechStackFlexBox";
 
 const standardPanel = (contentVariable) => {
   return (
@@ -41,6 +42,7 @@ const aboutMeSection = () => {
         it could improve the lives of many people in different fields of work. I
         am a self-taught developer with knowledge in the following tech stack:
       </p>
+      <ResponsiveAutoExample />
     </>
   );
   return standardPanel(componentContent);
