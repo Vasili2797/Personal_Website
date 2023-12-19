@@ -13,17 +13,17 @@ const Introduction = () => {
     <>
       <Navigation />
       <Routes>
-        <Route path="Home" element={<Home />} />
-        <Route path="Home" element={<Home />} />
-        <Route path="About" element={<About />} />
-        <Route path="https://github.com/Vasili2797" element={<GitHub />} />
+        <Route exact path="/" Component={Home} />
+        <Route path="Home" Component={Home} />
+        <Route path="About" Component={About} />
+        <Route path="https://github.com/Vasili2797" Component={GitHub} />
         <Route
           path="https://www.linkedin.com/in/vasili-nashvilli-08bb95140/"
-          element={<LinkedIn />}
+          Component={LinkedIn}
         />
-        <Route path="MyProjects" element={<MyProjects />} />
-        <Route path="Resume" element={<Resume />} />
-        <Route path="Contact" element={<Contact />} />
+        <Route path="MyProjects" Component={MyProjects} />
+        <Route path="Resume" Component={Resume} />
+        <Route path="Contact" Component={Contact} />
       </Routes>
     </>
   );
