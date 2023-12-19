@@ -46,15 +46,11 @@ img {
   display: block;
 }
 .grid-item {
-  /* position: relative; */
-  /* place-items: center; */
-  /* margin: auto; */
-  /* max-width: 300px; */
-  padding: 15px;
+  padding: 30px;
 }
 
 figure {
-  position: center;
+  text-align: center;
 }
 figcaption {
   position: relative;
@@ -64,4 +60,13 @@ figcaption {
 #email,
 #Services {
   text-transform: capitalize;
+}
+
+#indexPageImage {
+  height: 300px;
+  width: 300px;
+}
+
+label {
+  margin: 5px;
 }
