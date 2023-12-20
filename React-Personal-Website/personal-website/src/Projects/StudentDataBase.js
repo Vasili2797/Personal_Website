@@ -18,8 +18,11 @@ const StudentDataBase = () => {
               />
               <figcaption>student course registration</figcaption>
               <div class="image__overlay">
-                <div class="image__title">FInancial Planning</div>
-                <p class="image__description">asdasd</p>
+                <div class="image__title">Student Registration</div>
+                <p class="image__description">
+                  Java program where an individual can enroll as a student and
+                  start registering for different courses
+                </p>
               </div>
             </div>
           </a>
