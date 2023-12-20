@@ -1,0 +1,47 @@
+const OriginalWebSite = () => {
+  return (
+    <>
+      <figure>
+        <ul>
+          <a
+            a
+            href="https://github.com/Vasili2797/Personal_Website/tree/main/newWebsite"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="image">
+              <img
+                src="https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1693321404/catalog/1696537762808541184/ksludrmq15x88tbrckzh.jpg"
+                alt="Personal Website"
+                height="300px"
+                width="450px"
+                style={{ height: "300px", width: "450px" }}
+              />
+              <figcaption>
+                personal website
+                <a
+                  onClick={() => {
+                    console.log(
+                      "When Clicked, it will send the person to live display"
+                    );
+                  }}
+                  style={{ "text-align": "right" }}
+                >
+                  Live
+                </a>
+              </figcaption>
+
+              <div class="image__overlay">
+                <div class="image__title">Personal Website in HTML and CSS</div>
+                <p class="image__description">
+                  Personal website done only in HTML and CSS
+                </p>
+              </div>
+            </div>
+          </a>
+        </ul>
+      </figure>
+    </>
+  );
+};
+export default OriginalWebSite;
