@@ -21,8 +21,11 @@ const MachineLearning = () => {
               <figcaption>machine learning exercise in python</figcaption>
 
               <div class="image__overlay">
-                <div class="image__title">Bricks</div>
-                <p class="image__description">Here we are testing this</p>
+                <div class="image__title">Credit Risk Sampling</div>
+                <p class="image__description">
+                  Using several machine learning models on given data to predict
+                  credit risk
+                </p>
               </div>
             </div>
           </a>
