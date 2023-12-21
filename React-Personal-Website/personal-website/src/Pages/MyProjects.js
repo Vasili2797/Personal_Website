@@ -4,6 +4,7 @@ import "../../src/MyProjects.css";
 import StudentDataBase from "../Projects/StudentDataBase";
 import OriginalWebSite from "../Projects/OriginalWebsite";
 import MachineLearning from "../Projects/MachineLearning";
+import CryptoCurrencyPortfolio from "../Projects/CryptoCurrencyPortfolio";
 
 const standardPanel = (contentVariable) => {
   return (
@@ -24,6 +25,7 @@ const MyProjects = () => {
       <MachineLearning />
       <OriginalWebSite />
       <StudentDataBase />
+      <CryptoCurrencyPortfolio />
     </>
   );
   return standardPanel(componentContent);
