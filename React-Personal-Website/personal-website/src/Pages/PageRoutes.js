@@ -16,7 +16,7 @@ function PageRoutes() {
           <Route exact path="/" component={<Home />}>
             <Home />
           </Route>
-          <Route path="About" component={<About />} />
+          <Route path="About" component={<Home />} />
           <Route path="GitHub" element={<GitHub />} />
           <Route path="LinkedIn" element={<LinkedIn />} />
           <Route path="MyProjects" element={<MyProjects />} />
