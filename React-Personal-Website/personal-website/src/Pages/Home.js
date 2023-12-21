@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
 import IndexImage from "../Files/image/index_picture.jpg";
 import Image from "react-bootstrap/Image";
+import About from "./About";
 
 const standardPanel = (contentVariable) => {
   return (
@@ -34,10 +35,12 @@ const Home = () => {
       <Row className="text-center mt-3">
         <h1>Welcome to The Personal Website of Vasili Nashvilli</h1>
       </Row>
-      <p>
-        Welcome to my personal website. This is the place where you can see
-        different projects I developed. Thank you for visiting!
-      </p>
+
+      <Row className="mt-3">
+        <Col>
+          <About />
+        </Col>
+      </Row>
     </>
   );
 
