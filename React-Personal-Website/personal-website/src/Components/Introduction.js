@@ -15,7 +15,7 @@ const Introduction = () => {
       <Routes>
         <Route exact path="/" Component={Home} />
         <Route path="Home" Component={Home} />
-        <Route path="About" Component={About} />
+        <Route path="About" Component={Home} />
         <Route path="https://github.com/Vasili2797" Component={GitHub} />
         <Route
           path="https://www.linkedin.com/in/vasili-nashvilli-08bb95140/"
