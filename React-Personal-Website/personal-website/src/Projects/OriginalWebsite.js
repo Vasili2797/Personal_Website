@@ -4,7 +4,6 @@ const OriginalWebSite = () => {
       <figure>
         <ul>
           <a
-            a
             href="https://github.com/Vasili2797/Personal_Website/tree/main/newWebsite"
             target="_blank"
             rel="noopener noreferrer"
@@ -17,18 +16,8 @@ const OriginalWebSite = () => {
                 width="450px"
                 style={{ height: "300px", width: "450px" }}
               />
-              <figcaption>
+              <figcaption style={{ textAlign: "center" }}>
                 personal website
-                <a
-                  onClick={() => {
-                    console.log(
-                      "When Clicked, it will send the person to live display"
-                    );
-                  }}
-                  style={{ "text-align": "right" }}
-                >
-                  Live
-                </a>
               </figcaption>
 
               <div class="image__overlay">
@@ -39,6 +28,18 @@ const OriginalWebSite = () => {
               </div>
             </div>
           </a>
+          <div>
+            <a
+              className="right"
+              onClick={() => {
+                console.log(
+                  "When Clicked, it will send the person to live display"
+                );
+              }}
+            >
+              Live
+            </a>
+          </div>
         </ul>
       </figure>
     </>
