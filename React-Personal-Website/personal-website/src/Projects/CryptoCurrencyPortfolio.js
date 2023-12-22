@@ -8,7 +8,7 @@ const CryptoCurrencyPortfolio = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image">
+            <div className="image">
               <img
                 src="https://images.pexels.com/photos/843700/pexels-photo-843700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Cryptocurrency"
@@ -18,11 +18,11 @@ const CryptoCurrencyPortfolio = () => {
                 //   alt="cryptocurrency portfolio image"
               />
               <figcaption>Cryptocurrency Portfolio Allocator</figcaption>
-              <div class="image__overlay">
-                <div class="image__title">
+              <div className="image__overlay">
+                <div className="image__title">
                   Cryptocurrency Portfolio Allocator
                 </div>
-                <p class="image__description">
+                <p className="image__description">
                   Generating a report on what cryptocurrencies are available on
                   the trading markets using Python maching learning library
                   scikit-learn

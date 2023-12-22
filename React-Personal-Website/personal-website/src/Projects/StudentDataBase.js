@@ -8,7 +8,7 @@ const StudentDataBase = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image">
+            <div className="image">
               <img
                 src="https://www.shutterstock.com/image-illustration/stack-textbooks-isolated-on-white-600w-83105218.jpg"
                 height="300px"
@@ -17,9 +17,9 @@ const StudentDataBase = () => {
                 alt="student course registration image"
               />
               <figcaption>student course registration</figcaption>
-              <div class="image__overlay">
-                <div class="image__title">Student Registration</div>
-                <p class="image__description">
+              <div className="image__overlay">
+                <div className="image__title">Student Registration</div>
+                <p className="image__description">
                   Java program where an individual can enroll as a student and
                   start registering for different courses
                 </p>

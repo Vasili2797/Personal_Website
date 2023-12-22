@@ -1,3 +1,5 @@
+import moonImage from "../Files/image/moonImageCopy.png";
+
 const OriginalWebSite = () => {
   return (
     <>
@@ -10,7 +12,7 @@ const OriginalWebSite = () => {
           >
             <div class="image">
               <img
-                src="https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1693321404/catalog/1696537762808541184/ksludrmq15x88tbrckzh.jpg"
+                src={moonImage}
                 alt="Personal Website"
                 height="300px"
                 width="450px"

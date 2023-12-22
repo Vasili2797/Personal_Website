@@ -9,7 +9,7 @@ const MachineLearning = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image">
+            <div className="image">
               <img
                 src="https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="credit risk analysis using algorithms"
@@ -20,9 +20,9 @@ const MachineLearning = () => {
               />
               <figcaption>machine learning exercise in python</figcaption>
 
-              <div class="image__overlay">
-                <div class="image__title">Credit Risk Sampling</div>
-                <p class="image__description">
+              <div className="image__overlay">
+                <div className="image__title">Credit Risk Sampling</div>
+                <p className="image__description">
                   Using several machine learning models on given data to predict
                   credit risk
                 </p>
