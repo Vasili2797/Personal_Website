@@ -21,17 +21,18 @@ const indexImage = () => {
 const Home = () => {
   const componentContent = (
     <>
-      <Row className="justify-content-center mt-5">
-        <Col xs={12} sm={2} md={3}>
-          <img
-            align="center"
-            src={IndexImage}
-            alt="Index Image"
-            id="indexPageImage"
-          />
-        </Col>
-      </Row>
-
+      <div>
+        <div className="container">
+          <div className="item">
+            <img
+              src={IndexImage}
+              alt="Index Image"
+              className="mx-auto d-block"
+              id="indexPageImage"
+            />
+          </div>
+        </div>
+      </div>
       <Row className="text-center mt-3">
         <h1>Welcome to The Personal Website of Vasili Nashvilli</h1>
       </Row>
