@@ -34,6 +34,18 @@ const Navigation = () => {
             <Link to="Home" className="nav-link">
               About
             </Link>
+            <Link to="MyProjects" className="nav-link">
+              My Projects{" "}
+            </Link>
+
+            <Link
+              to="https://github.com/Vasili2797/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+            >
+              GitHub{" "}
+            </Link>
 
             <Link
               to="https://www.linkedin.com/in/vasili-nashvilli-08bb95140/"
@@ -43,17 +55,7 @@ const Navigation = () => {
             >
               LinkedIn{" "}
             </Link>
-            <Link
-              to="https://github.com/Vasili2797/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-link"
-            >
-              GitHub{" "}
-            </Link>
-            <Link to="MyProjects" className="nav-link">
-              My Projects{" "}
-            </Link>
+
             <Link
               to="https://drive.google.com/file/d/1SbdxKqy4sT_Xih89vMHgVXDRR87Jm7qp/view?usp=sharing"
               target="_blank"
