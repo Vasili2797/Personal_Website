@@ -6,6 +6,11 @@ import {
   DropdownButton,
   ButtonGroup,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import * as data from "../JSON/navigationLinks.json";
+
+const LinksString = JSON.stringify(data);
+const links = JSON.parse(LinksString).links;
 
 const Navigation = () => {
   return (
@@ -22,39 +27,45 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="Home">Home</Nav.Link>
-            <Nav.Link href="About">About</Nav.Link>
-            <Nav.Link
-              href="https://github.com/Vasili2797/"
+            <Link to="Home" className="nav-link">
+              Home{" "}
+            </Link>
+
+            <Link to="Home" className="nav-link">
+              About
+            </Link>
+
+            <Link
+              to="https://www.linkedin.com/in/vasili-nashvilli-08bb95140/"
               target="_blank"
               rel="noopener noreferrer"
+              className="nav-link"
             >
-              GitHub
-            </Nav.Link>
-            <Nav.Link
-              href="https://www.linkedin.com/in/vasili-nashvilli-08bb95140/"
+              LinkedIn{" "}
+            </Link>
+            <Link
+              to="https://github.com/Vasili2797/"
               target="_blank"
               rel="noopener noreferrer"
+              className="nav-link"
             >
-              LinkedIn
-            </Nav.Link>
-            <Nav.Link href="MyProjects">MyProjects</Nav.Link>
-            <DropdownButton
-              as={ButtonGroup}
-              key={"Secondary"}
-              id={`dropdown-variants-Primary`}
-              variant={"Secondary".toLowerCase()}
-              title={"Resume"}
+              GitHub{" "}
+            </Link>
+            <Link to="MyProjects" className="nav-link">
+              My Projects{" "}
+            </Link>
+            <Link
+              to="https://drive.google.com/file/d/1SbdxKqy4sT_Xih89vMHgVXDRR87Jm7qp/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
             >
-              <Dropdown.Item
-                href="https://drive.google.com/file/d/1SbdxKqy4sT_Xih89vMHgVXDRR87Jm7qp/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </Dropdown.Item>
-            </DropdownButton>
-            <Nav.Link href="Contact">Contact</Nav.Link>
+              Resume
+            </Link>
+
+            <Link to="Contact" className="nav-link">
+              Contact
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
