@@ -1,8 +1,9 @@
+import { Image } from "react-bootstrap";
 import moonImage from "../Files/image/moonImageCopy.png";
 
 const OriginalWebSite = () => {
   return (
-    <>
+    <div className="figure-container">
       <figure>
         <ul>
           <a
@@ -11,12 +12,11 @@ const OriginalWebSite = () => {
             rel="noopener noreferrer"
           >
             <div class="image">
-              <img
+              <Image
                 src={moonImage}
+                style={{ height: "300px", width: "450px", display: "block" }}
+                fluid
                 alt="Personal Website"
-                height="300px"
-                width="450px"
-                style={{ height: "300px", width: "450px" }}
               />
               <figcaption style={{ textAlign: "center" }}>
                 personal website
@@ -44,7 +44,7 @@ const OriginalWebSite = () => {
           </div>
         </ul>
       </figure>
-    </>
+    </div>
   );
 };
 export default OriginalWebSite;

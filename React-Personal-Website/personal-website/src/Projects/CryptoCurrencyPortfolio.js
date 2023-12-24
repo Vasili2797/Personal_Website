@@ -1,6 +1,8 @@
+import { Image } from "react-bootstrap";
+
 const CryptoCurrencyPortfolio = () => {
   return (
-    <>
+    <div className="figure-container">
       <figure>
         <ul>
           <a
@@ -9,13 +11,14 @@ const CryptoCurrencyPortfolio = () => {
             rel="noopener noreferrer"
           >
             <div className="image">
-              <img
+              <Image
                 src="https://images.pexels.com/photos/843700/pexels-photo-843700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Cryptocurrency"
-                height="300px"
-                width="450px"
-                style={{ minWidth: "30px", width: "450px", height: "300px" }}
+                // height="300px"
+                // width="450px"
+                style={{ height: "300px", width: "450px", display: "block" }}
                 //   alt="cryptocurrency portfolio image"
+                fluid
+                alt="Cryptocurrency"
               />
               <figcaption>Cryptocurrency Portfolio Allocator</figcaption>
               <div className="image__overlay">
@@ -44,7 +47,7 @@ const CryptoCurrencyPortfolio = () => {
           </div>
         </ul>
       </figure>
-    </>
+    </div>
   );
 };
 

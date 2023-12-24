@@ -1,6 +1,8 @@
+import { Image } from "react-bootstrap";
+
 const StudentDataBase = () => {
   return (
-    <>
+    <div className="figure-container">
       <figure>
         <ul>
           <a
@@ -9,11 +11,10 @@ const StudentDataBase = () => {
             rel="noopener noreferrer"
           >
             <div className="image">
-              <img
-                src="https://www.shutterstock.com/image-illustration/stack-textbooks-isolated-on-white-600w-83105218.jpg"
-                height="300px"
-                width="450px"
-                style={{ height: "300px", width: "450px" }}
+              <Image
+                src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                style={{ height: "300px", width: "450px", display: "block" }}
+                fluid
                 alt="student course registration image"
               />
               <figcaption>student course registration</figcaption>
@@ -40,7 +41,7 @@ const StudentDataBase = () => {
           </div>
         </ul>
       </figure>
-    </>
+    </div>
   );
 };
 export default StudentDataBase;

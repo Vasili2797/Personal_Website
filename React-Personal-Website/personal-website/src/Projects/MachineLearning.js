@@ -1,6 +1,8 @@
+import { Image } from "react-bootstrap";
+
 const MachineLearning = () => {
   return (
-    <>
+    <div className="figure-container">
       <figure>
         <ul>
           <a
@@ -10,12 +12,11 @@ const MachineLearning = () => {
             rel="noopener noreferrer"
           >
             <div className="image">
-              <img
+              <Image
                 src="https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                style={{ height: "300px", width: "450px", display: "block" }}
+                fluid
                 alt="credit risk analysis using algorithms"
-                height="300px"
-                width="450px"
-                style={{ height: "300px", width: "450px" }}
                 // style=" min-width: 30px; max-width: 450; height: 300px;"
               />
               <figcaption>machine learning exercise in python</figcaption>
@@ -43,7 +44,7 @@ const MachineLearning = () => {
           </div>
         </ul>
       </figure>
-    </>
+    </div>
   );
 };
 export default MachineLearning;
