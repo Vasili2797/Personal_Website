@@ -14,10 +14,6 @@ const standardPanel = (contentVariable) => {
   );
 };
 
-const indexImage = () => {
-  <Image src={{ IndexImage }} fluid alt="Index Image" id="indexPageImage" />;
-};
-
 const Home = () => {
   const componentContent = (
     <>
