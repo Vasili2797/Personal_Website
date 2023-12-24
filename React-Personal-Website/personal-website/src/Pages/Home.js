@@ -18,7 +18,7 @@ const Home = () => {
   const componentContent = (
     <>
       <div>
-        <div className="container">
+        <div className="container m-2">
           <div className="item">
             <img
               src={IndexImage}
