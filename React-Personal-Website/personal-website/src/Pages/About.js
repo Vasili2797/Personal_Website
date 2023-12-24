@@ -15,7 +15,7 @@ const standardPanel = (contentVariable) => {
 const aboutMeSection = () => {
   const componentContent = (
     <>
-      <h2>About Me</h2>
+      <h2 className="text-center">About Me</h2>
       <p id="first_paragraph">
         Hello, and thank you for visiting my webpage. My name is Vasili
         Nashvilli, a developer based in New Jersey. I have a bachelor's of
