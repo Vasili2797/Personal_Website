@@ -53,6 +53,10 @@ img {
 
 figure {
   text-align: center;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
 
 figcaption {
@@ -136,63 +140,62 @@ body {
   }
 }
 
-
 .image {
-    /*This is the one that controls images of projects*/
-    position: relative;
-    min-width: 45px;
-    max-width: 100%;
+  /*This is the one that controls images of projects*/
+  position: relative;
+  min-width: 45px;
+  max-width: 100%;
 }
 
-.image>img {
-    /*The images themselves*/
-    display: flex;
-    width: 100%;
-    object-fit: cover;
+.image > img {
+  /*The images themselves*/
+  display: flex;
+  width: 100%;
+  object-fit: cover;
 }
 
 .image__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 93%;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 93%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
 }
 
 .image__overlay--blur {
-    backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
-.image__overlay>* {
-    transform: translateY(20px);
-    transition: transform 0.25s;
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
 }
 
-.image__overlay:hover>* {
-    transform: translateY(0);
+.image__overlay:hover > * {
+  transform: translateY(0);
 }
 
 .image__overlay:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .image__title {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
 }
 
 .image__description {
-    font-size: 1.25em;
-    margin-top: 0.25em;
-    text-align: center;
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  text-align: center;
 }
