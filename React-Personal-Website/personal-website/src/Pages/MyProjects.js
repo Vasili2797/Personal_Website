@@ -22,10 +22,29 @@ const MyProjects = () => {
       <Row className="text-center mt-3">
         <h1>The Following Are Few of My Personal Projects Hosted on GitHub</h1>
       </Row>
-      <MachineLearning />
-      <OriginalWebSite />
-      <StudentDataBase />
-      <CryptoCurrencyPortfolio />
+      {/* <div className="container">
+        <div className="small-box dark-box mx-auto text-center">
+          Small Box / Dark Box
+        </div>
+      </div> */}
+      <Row className="mx-auto justify-content-center">
+        <Col
+          className="mx-auto text-center"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <MachineLearning />
+          <OriginalWebSite />
+        </Col>
+      </Row>
+      <Row className="mx-auto justify-content-center">
+        <Col
+          className="mx-auto text-center"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <StudentDataBase />
+          <CryptoCurrencyPortfolio />
+        </Col>
+      </Row>
     </>
   );
   return standardPanel(componentContent);
