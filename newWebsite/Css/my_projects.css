@@ -205,9 +205,19 @@ figure figcaption {
   text-align: center;
 }
 
-@media(max-width:1000px){
+@media (max-width: 1000px) {
   /*It was 977*/
-  .container{
+  .container {
     width: 50%;
+  }
+
+  .container-item {
+    transform: scale(0.75);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-right: 30%;
   }
 }
